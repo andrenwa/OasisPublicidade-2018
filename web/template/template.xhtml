@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title> Oasis Publicidade </title>
+        <h:outputStylesheet library="css"  name="estilos.css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    </h:head>
+
+    <h:body>
+
+        <p:growl id="msgSistema" sticky="true" />
+
+        <p:layout fullPage="true"> 
+
+            <p:layoutUnit position="north" 
+                          header="Oasis Publicidade Seu negocio em primeiro lugar!" 
+                          resizable="false" closable="false" collapsible="false"> 
+                <!--                 <ui:include src="/includes/menu.xhtml"/>-->
+
+                <p:tabMenu activeIndex="#{param.i}"/>
+                <h:form>  
+
+                       <!--   MENU SUPERIOR      -->
+                    <p:menubar>
+
+                        <p:submenu label="Cadastro" icon="ui-icon-folder-open">
+                            <p:menuitem value="Anunciantes"  icon="ui-icon-circle-plus "/>
+                        </p:submenu>
+
+                          <p:submenu label="Contato" icon="ui-icon-folder-open">
+                            <p:menuitem value="Entre em contato"  icon="ui-icon-circle-plus "/>
+                        </p:submenu>
+                        
+
+                        <p:menuitem value="Facebook" url="http://www.facebook.com" icon="ui-icon-star" />
+
+                        <f:facet name="options">
+                            <p:inputText style="margin-right:10px" placeholder="Search"/>
+                            <p:commandButton type="button"  value="Sair" icon="ui-icon-power"  action="/index.xhtml" ajax = "false"  />
+                        </f:facet>
+
+
+                    </p:menubar>
+                </h:form>
+                         <!--   FIM MENU SUPERIOR    -->
+
+
+            </p:layoutUnit> 
+
+            
+            
+                 <!--    MENU PRINCIPAL   -->
+
+            <p:layoutUnit position="west"  header="Menu Principal" 
+                          resizable="false" closable="false" collapsible="false"> 
+                <h:outputText  /> 
+
+
+                <h:form> 
+
+                    <p:panelMenu> 
+
+
+                        <p:submenu label="Arquivos"> 
+                            <p:menuitem value="Principal" /> 
+                            <p:menuitem value="Sair" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Agropecuaria"> 
+                            <p:menuitem value="k"  /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Auto-escola"> 
+                            <p:menuitem value="k"  /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Bufet"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+
+                        <p:submenu label="Centro Automivo"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Capotaria"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Chaveiro"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Colchões"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+
+                        <p:submenu label="Cursos"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+
+                        <p:submenu label="Contabilidade"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Dentista"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Drogaria"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Distribuidora de Bebidas"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Enxovais"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Embalagens"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Extintores"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Festas e eventos"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Forros"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Guincho"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+
+                        <p:submenu label="Informatica"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Imóbiliaria"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Madereira"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Marmoraria"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Metalúrgica"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Mat. de Construção"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Modas"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Papelaria"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Restaurantes e Pizzarias"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Refrigeração"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+
+                        <p:submenu label="Sacaria"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Sex Shop"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Som Automotivo"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Tapetes"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Utilidades do lar"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Vidraçaria"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Viveiro de plantas"> 
+                            <p:menuitem value="k" /> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+                        <p:submenu label="Anunciante"> 
+                            <p:menuitem value="k" /> 
+                        </p:submenu> 
+
+
+                    </p:panelMenu> 
+
+                </h:form> 
+
+
+
+            </p:layoutUnit> 
+                 
+                 
+                  <!--   FIM MENU PRINCIPAL    -->
+                 
+                         
+                  
+                  
+                      <!--   MENU LATERAL DIREITO    -->
+            <p:layoutUnit position="east" size="230" header="Noticias" 
+                          resizable="false" closable="false" collapsible="true"> 
+                
+                <h:panelGrid columns="1" cellpadding="3">
+        
+        <p:calendar  value="#{calendarView.date1}" mode="inline" />
+        
+       
+        
+                </h:panelGrid>
+            </p:layoutUnit> 
+
+                       <!--   FIM MENU LATERAL DIREITO    -->
+                      
+                      
+                       
+                       
+                        <!--   CAMPO CENTRAL DA APLICACAO    -->
+            <p:layoutUnit position="center">
+
+                <ui:insert name="conteudo" />
+
+            </p:layoutUnit>
+                             <!--  FIM  CAMPO CENTRAL DA APLICACAO      -->
+                        
+                        
+                             
+                             <!--    BARRA DO RODAPE   -->
+            <p:layoutUnit position="south" 
+                          header="Desenvolvido por Oasis Sistemas" resizable="false"
+                          closable="false" collapsible="false">
+
+            </p:layoutUnit>
+                                 <!--  FIM BARRA DO RODAPE     -->
+        </p:layout>
+
+    </h:body>
+</html>
