@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+
+    <ui:composition template="/template/template.xhtml">
+
+        <ui:define name="conteudo">
+            
+             <h:form>
+                
+                <h:panelGrid columns="2">
+                    
+                    <p:outputLabel value="Nome:"/>
+                    <p:inputText/>
+                    
+                    <p:outputLabel value="Telefone:"/>
+                    <p:inputMask    mask="(99)99999-9999"/>
+                    
+                    <p:outputLabel value="Tipo de Negocio:"/>
+                    <p:inputText/>
+                    
+                    <p:outputLabel for="selctMenu1" value="Melhor horario para atendimento"/>
+                    <p:selectOneMenu id="selctMenu1">
+                        <f:selectItem itemLabel="Selecione" itemValue=""/>
+                        <f:selectItem itemLabel="Manha"/>
+                        <f:selectItem itemLabel="Tarde"/>
+                                                                 
+                    </p:selectOneMenu>
+                    
+                    <p:commandButton value="Enviar" action="enviar"/>
+                    
+                </h:panelGrid>
+                
+            </h:form>
+            
+        </ui:define>
+
+    </ui:composition>
+
+</html>
